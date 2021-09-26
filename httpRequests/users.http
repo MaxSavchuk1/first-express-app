@@ -6,7 +6,7 @@ POST http://127.0.0.1:5000/users
 Content-Type: application/json
 
 {
-  "firstName": "User3",
+  "firstName": "   fg   asdf  asdf   ",
   "lastName": "Userenko3",
   "email": "test3@tr.e"
 }
