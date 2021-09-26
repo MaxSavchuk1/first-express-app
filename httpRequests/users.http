@@ -1,0 +1,27 @@
+GET http://127.0.0.1:5000/users/
+
+###
+
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+  "firstName": "User3",
+  "lastName": "Userenko3",
+  "email": "test3@tr.e"
+}
+
+###
+GET http://127.0.0.1:5000/cars/
+###
+POST http://127.0.0.1:5000/cars
+Content-Type: application/json
+
+{
+  "brand": "KIA",
+  "model": "Cerato",
+  "manufacturedAt": "2016"
+}
+
+###
+DELETE http://127.0.0.1:5000/cars/3497d323-fe1be9862a54464
