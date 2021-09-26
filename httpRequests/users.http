@@ -12,6 +12,7 @@ Content-Type: application/json
 }
 
 ###
+##############################
 GET http://127.0.0.1:5000/cars/
 ###
 POST http://127.0.0.1:5000/cars
@@ -25,3 +26,13 @@ Content-Type: application/json
 
 ###
 DELETE http://127.0.0.1:5000/cars/3497d323-fe1be9862a54464
+
+###
+PATCH http://127.0.0.1:5000/cars/96f56d59-d55d-458b-918d-330f8b2e080b
+Content-Type: application/json
+
+{
+  "brand": "KIA",
+  "model": "Cerato",
+  "manufacturedAt": "2016"
+}

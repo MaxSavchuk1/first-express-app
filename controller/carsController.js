@@ -37,3 +37,11 @@ module.exports.deleteCar = (req, res) => {
     res.status(404).send('Not found');
   }
 };
+module.exports.updateCar = (req, res) => {
+  const {
+    body,
+    params: { carId },
+  } = req;
+  const indexOfCar = carsDb.findIndex(car => carId === car.id);
+  console.log(carsDb[indexOfCar]);
+};

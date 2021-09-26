@@ -20,5 +20,6 @@ app.delete('/users/10', userController.deleteUser);
 app.get('/cars', carsController.getCars);
 app.post('/cars', carsController.createCar);
 app.delete('/cars/:carId', carsController.deleteCar);
+app.patch('/cars/:carId', carsController.updateCar);
 
 module.exports = app;
